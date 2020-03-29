@@ -1,3 +1,3 @@
-{
-    "text": "Hello, from content"
-}
+const content = "Hello, world!";
+
+module.exports = content;
