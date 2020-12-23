@@ -1,4 +1,5 @@
-const print = require('./print');
-const content = require('./content');
+const fs = require('fs');
 
-print(content);
+const dir = fs.readdirSync(__dirname).sort();
+
+dir.map(file => console.log(file));
