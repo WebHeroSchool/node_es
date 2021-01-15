@@ -1,5 +1,7 @@
 const fs = require('fs');
 
-const dir = fs.readdirSync(__dirname).sort();
-
-dir.map(file => console.log(file));
+fs.readdir(__dirname, (err, files) => {
+    if(err) return console.error(err);
+    const dir = files.sort();
+    dir.map(file => console.log(file));
+});
