@@ -1,5 +1,23 @@
 const fs = require('fs');
 
-const pathEx = fs.readFileSync("03.txt").toString();
+new Promise(resolve => {
+    fs.readFile(__filename, ((err, data) => {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        resolve(data)
+    }));
+}).then(data => {
 
-(fs.existsSync(pathEx)) ? console.log('Путь существует') : console.log('Путь не существует')
+    fs.writeFile(__filename + '.exmaple', data.toString(), ((err) => {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        setTimeout(() => {
+            console.log('success');
+        }, 300)
+    }));
+
+});
