@@ -1,0 +1,25 @@
+{
+  "name": "node_es",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01.js",
+  "dependencies": {
+    "async": "^3.2.0",
+    "async-each-series": "^1.1.0",
+    "chance": "^1.1.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebHeroSchool/node_es.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebHeroSchool/node_es/issues"
+  },
+  "homepage": "https://github.com/WebHeroSchool/node_es#readme"
+}
