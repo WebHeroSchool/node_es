@@ -10,4 +10,4 @@ myEmitter.on(MESSAGE_EVENT, (MESSAGE_EVENT) => {
 
 new MyMessenger(myEmitter);
 
-myEmitter.emit(MESSAGE_EVENT);
+// myEmitter.emit(MESSAGE_EVENT);
