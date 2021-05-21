@@ -2,7 +2,7 @@ const {Transform} = require('stream');
 
 const upperCaseTr = new Transform({
     transform(chunck, encoding, callback) {
-        this.push(chunck.toString().toUpperCase());
+        this.push(`*${chunck.toString()}`);
         callback()
     }
 });
