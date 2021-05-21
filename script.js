@@ -1,10 +1,12 @@
 const fs = require('fs');
 
-const readText = fs.createReadStream(__dirname + '/text.txt', {
-    encoding: 'utf-8',
-    highWaterMark: 100
-});
-
-const writeText = fs.createWriteStream(__dirname + '/newText.txt');
-
-readText.pipe(writeText);
+setInterval(()=>{
+    try {
+        fs.readFile("text.tx", "utf8", function (err, contents) {
+            if(err) return console.error(err);
+            console.log('Количество слов', contents.split(' ').length)
+        });
+    } catch(err) {
+        console.log("Error:" + err);
+    }
+},1000)
