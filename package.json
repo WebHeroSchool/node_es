@@ -6,7 +6,8 @@
   "dependencies": {
     "async": "^3.2.0",
     "async-each-series": "^1.1.0",
-    "chance": "^1.1.7"
+    "chance": "^1.1.7",
+    "dotenv": "^10.0.0"
   },
   "devDependencies": {},
   "scripts": {
