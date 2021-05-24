@@ -8,11 +8,14 @@
     "async-each-series": "^1.1.0",
     "chance": "^1.1.7",
     "dotenv": "^10.0.0",
+    "macha": "0.0.0",
     "winston": "^3.3.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^8.4.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -23,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/WebHeroSchool/node_es/issues"
   },
-  "homepage": "https://github.com/WebHeroSchool/node_es#readme"
+  "homepage": "https://github.com/WebHeroSchool/node_es#readme",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": []
 }
